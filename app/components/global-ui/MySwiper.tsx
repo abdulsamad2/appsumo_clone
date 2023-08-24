@@ -22,19 +22,20 @@ interface Props {
 const MySwiper: React.FC<Props> = ({ children, slidesperpage }) => {
   const swiperRef = useRef(null);
   const [loading, setLoading] = useState(true);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
 
   useEffect(() => {
     setLoading(false);
   }, []);
   const goPrev = () => {
     if (swiperRef.current) {
-      swiperRef.current.swiper.slidePrev();
+      swiperInstance?.current?.swiper.slidePrev();
     }
   };
 
   const goNext = () => {
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideNext();
+      swiperInstance?.current?.swiper?.slideNext();
     }
   };
   if (loading) {

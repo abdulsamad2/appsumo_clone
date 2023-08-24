@@ -35,9 +35,7 @@ const WhatisHot = () => {
         <Typography fontWeight={600} fontSize={30} variant="h2">
           What is Hot
         </Typography>
-        <Link sx={{ color: "blue" }} href="#">
-          view All
-        </Link>
+        <Link href="#">view All</Link>
       </Box>
       <Box py={1}>
         <MySwiper slidesperpage={slidesPerRow}>
