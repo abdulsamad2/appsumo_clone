@@ -19,6 +19,7 @@ import "swiper/css/pagination";
 
 export default function App() {
   const [slidesPerRow, setSlidesPerRow] = useState(3);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore>();
 
   const handleResize = () => {
     const screenWidth = window.innerWidth;
@@ -46,13 +47,13 @@ export default function App() {
   }, []);
   const goPrev = () => {
     if (swiperRef.current) {
-      swiperRef.current.swiper.slidePrev();
+      swiperInstance?.current?.swiper.slidePrev();
     }
   };
 
   const goNext = () => {
     if (swiperRef.current) {
-      swiperRef.current.swiper.slideNext();
+      swiperInstance?.current?.swiper?.slideNext();
     }
   };
   if (loading) {
