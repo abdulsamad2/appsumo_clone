@@ -6,7 +6,11 @@ import HeroCrousel from "./HeroCrousel";
 const Hero = () => {
   return (
     <Box paddingY={10} bgcolor={"#021414"}>
-      <Stack gap={10} direction={{ sm: "column", md: "row" }}>
+      <Stack
+        bgcolor={"#021414"}
+        gap={10}
+        direction={{ sm: "column", md: "row" }}
+      >
         <Emailsignup />
         <HeroCrousel />
       </Stack>

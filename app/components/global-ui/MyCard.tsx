@@ -8,13 +8,12 @@ import Typography from "@mui/material/Typography";
 import Link from "next/link";
 import { Box, Stack } from "@mui/material";
 
-export default function MyCard() {
+export default function MyCard({}) {
   return (
     <Card
       sx={{
         p: "1rem",
         maxWidth: "300px",
-        minWidth: "250px",
         bgcolor: "#09292B",
         borderTop: ".3rem solid #07C03B",
       }}

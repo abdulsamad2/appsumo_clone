@@ -10,11 +10,14 @@ const barlow = Barlow({
 const Emailsignup = () => {
   return (
     <Box
-      ml={15}
       display={"flex"}
       flexDirection={"column"}
       gap={2}
-      maxWidth="450px"
+      sx={{
+        px: { xs: "2rem", md: "0rem" },
+        marginLeft: { xs: "0", md: "10rem" },
+        maxWidth: { xs: "90%", md: "450px" },
+      }}
     >
       <Typography
         className={barlow.className}
