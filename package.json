@@ -14,6 +14,7 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
+    "@swiper/core": "^0.0.21",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
