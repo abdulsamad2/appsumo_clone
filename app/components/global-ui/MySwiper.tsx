@@ -8,15 +8,19 @@ import React, { Children, ReactNode, useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import CircularProgress from "@mui/material/CircularProgress";
+import Navigation from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
+interface MySwiperProps {
+  slidesPerView: any; // Make sure the type is correctly defined here
+}
 interface Props {
   children: ReactNode;
-  slidesperpage: Number | string;
+  slidesperpage: number | "auto"; // Make sure the type is correctly defined here
 }
 
 const MySwiper: React.FC<Props> = ({ children, slidesperpage }) => {
