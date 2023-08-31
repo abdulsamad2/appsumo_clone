@@ -8,7 +8,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import Pagination from "swiper";
 import CircularProgress from "@mui/material/CircularProgress";
 import Navigation from "swiper";
 
